@@ -36,9 +36,9 @@ let sayGreetings = function () {
   p.textContent = "Сегодня: " + wk;
   if (day >= 0 && day < 12) {
     h4.textContent = morning;
-  } else if (day == 12) {
+  } else if (day > 12 && day < 17) {
     h4.textContent = afternoon;
-  } else if (day >= 12 && day <= 17) {
+  } else if (day > 17 && day < 21) {
     h4.textContent = evening;
   } else {
     h4.textContent = night;
